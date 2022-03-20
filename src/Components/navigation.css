@@ -3,3 +3,18 @@
   padding: 1px;
   box-shadow: 5px 2px #808080;
 }
+
+.iconbutton {
+  border: grey;
+  background-color: white;
+  margin-left: 1%;
+}
+
+.iconbutton:hover {
+  background-color: #7a87ce;
+  color: white;
+}
+
+.createbutton {
+  margin-right: 5%;
+}

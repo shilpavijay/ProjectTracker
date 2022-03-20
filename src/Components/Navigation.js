@@ -11,13 +11,15 @@ import {
 } from "react-bootstrap";
 import "./navigation.css";
 import NotificationsNoneRoundedIcon from "@mui/icons-material/NotificationsNoneRounded";
+import HelpIcon from "@mui/icons-material/Help";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
 function Navigation() {
   return (
     <div>
       <Navbar bg="white" expand="lg">
-        <Container>
-          <Navbar.Brand href="#home">Project Tracker</Navbar.Brand>
+        <Container className="topcontainer">
+          <Navbar.Brand href="/home">Project Tracker</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
@@ -123,11 +125,12 @@ function Navigation() {
                   Separated link
                 </NavDropdown.Item>
               </NavDropdown>
-              <Button variant="primary" size="sm">
+              <Button variant="primary" size="sm" className="createbutton">
                 Create
               </Button>{" "}
             </Nav>
           </Navbar.Collapse>
+
           <Form className="d-flex">
             <FormControl
               type="search"
@@ -135,12 +138,15 @@ function Navigation() {
               className="me-2"
               aria-label="Search"
             />
-            <Button variant="primary" size="sm">
-              Search
-            </Button>
           </Form>
           <button className="iconbutton">
             <NotificationsNoneRoundedIcon />
+          </button>
+          <button className="iconbutton">
+            <HelpIcon />
+          </button>
+          <button className="iconbutton">
+            <AccountCircleIcon />
           </button>
         </Container>
       </Navbar>

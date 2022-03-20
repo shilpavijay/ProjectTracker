@@ -1,11 +1,14 @@
 import "./App.css";
-import Navigation from "./Components/Navigation";
+import Login from "./Components/Login";
+import Homepg from "./Components/Homepg";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Navigation />
-    </div>
+    <Routes>
+      <Route path="/login" element={<Login />}></Route>
+      <Route path="/home" element={<Homepg />}></Route>
+    </Routes>
   );
 }
 

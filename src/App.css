@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  background-color: white;
 }
 
 .App-logo {
@@ -36,14 +35,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-.title {
-  color: darkblue;
-  margin-bottom: 100px;
-  margin-top: 80px;
-}
-
-.formcol {
-  margin-top: 10px;
 }
